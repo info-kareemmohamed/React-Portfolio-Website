@@ -33,6 +33,11 @@ const Contact = () => {
       );
   };
 
+  const inputStyle = {
+    backgroundColor: darkMode && "#333" , color:darkMode && "#ffffff"
+    };
+
+
   return (
     <div className="c">
       <div className="c-bg"></div>
@@ -61,10 +66,10 @@ const Contact = () => {
 
           </p>
           <form ref={formRef} onSubmit={handleSubmit}>
-          <input style={{backgroundColor: darkMode && "#333"}} type="text" placeholder="Name" name="user_name" />
-            <input style={{backgroundColor: darkMode && "#333"}} type="text" placeholder="Subject" name="user_subject" />
-            <input style={{backgroundColor: darkMode && "#333"}} type="text" placeholder="Email" name="user_email" />
-            <textarea style={{backgroundColor: darkMode && "#333"}} rows="5" placeholder="Message" name="message" />
+          <input style={inputStyle} type="text" placeholder="Name" name="user_name"  required/>
+            <input style={inputStyle} type="text" placeholder="Subject" name="user_subject"  required />
+            <input style={inputStyle} type="text" placeholder="Email" name="user_email"  required/>
+            <textarea style={inputStyle} rows="5" placeholder="Message" name="message"  required/>
             <button>Submit</button>
             {done && "Thank you..."}
           </form>
