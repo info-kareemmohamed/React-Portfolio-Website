@@ -21,8 +21,8 @@ const Intro = () => {
             
           ⚡ Info about me **I am Kareem Mohamed from Egypt
 I am a passionate mobile app developer
-I am an intelligent person who loves learning, exploring, and benefiting from new information
-I have a positive outlook on life and try to find the positive side of things
+{/* I am an intelligent person who loves learning, exploring, and benefiting from new information */}
+{/* I have a positive outlook on life and try to find the positive side of things */}
 
           </p>
         </div>
