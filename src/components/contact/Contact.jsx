@@ -68,7 +68,7 @@ const Contact = () => {
           <form ref={formRef} onSubmit={handleSubmit}>
           <input style={inputStyle} type="text" placeholder="Name" name="user_name"  required/>
             <input style={inputStyle} type="text" placeholder="Subject" name="user_subject"  required />
-            <input style={inputStyle} type="text" placeholder="Email" name="user_email"  required/>
+            <input style={inputStyle} type="Email" placeholder="Email" name="user_email"  required/>
             <textarea style={inputStyle} rows="5" placeholder="Message" name="message"  required/>
             <button>Submit</button>
             {done && "Thank you..."}
