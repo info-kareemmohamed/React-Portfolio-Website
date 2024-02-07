@@ -20,8 +20,8 @@ return(
     >
         
     
-        <img src={Sun} className='t-icon'/>
-        <img src={Moon} className='t-icon'/>
+        <img src={Sun} className='t-icon' alt='sun'/>
+        <img src={Moon} className='t-icon' alt='moon'/>
          <div className='t-button' onClick={handelClick}
         
         style={{ left: theme.state.darkMode ? 0 : 25, backgroundColor:theme.state.darkMode ? '#ffffff' : '#000'
